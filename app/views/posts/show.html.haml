@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Tite:
+  = post.tite
+%p
+  %b Body:
+  = post.body
+%p
+  %b Group:
+  = post.group_id
+
+= link_to 'Edit', edit_post_path(post)
+\|
+= link_to 'Back', posts_path
